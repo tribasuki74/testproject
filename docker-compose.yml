@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    backend:
+        hostname: backend
+        build: .
+        volumes:
+            - .:/app
+        ports:
+            - '80:8000'
+        
